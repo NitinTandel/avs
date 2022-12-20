@@ -1,0 +1,35 @@
+
+
+If new version of node is installed then run the following command before running the npm run dev
+https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported
+
+For Windows :
+set NODE_OPTIONS=--openssl-legacy-provider
+
+For Linux and macOS (Windows Git Bash) :
+export NODE_OPTIONS=--openssl-legacy-provider
+
+
+
+
+
+
+
+
+https://pixelied.com/create
+
+https://uxwing.com/ringing-phone-outline-icon/
+
+https://tailwind-elements.com/docs/standard/components/cards/
+
+
+
+
+
+Splide js Slider
+Wow js
+Smooth Scroll
+Glightbox
+Typed js
+Google Fonts
+
