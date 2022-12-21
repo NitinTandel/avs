@@ -55,112 +55,127 @@
 
             <div v-for= "s in ServicesList " :key="s.ServiceId" >
                 <services-card :service="s" />
-            </div>
-            
+            </div>            
         </div>
         </section>
+
+        <section class="bg-white border-b py-8">            
+                <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+                Our Products
+                </h2>
+                <div class="w-full mb-4">
+                    <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+                </div>
+                <div class="w-full p-4 flex flex-wrap" >
+                    <div v-for= "p in ProductList " :key="p.ProductId"  class="w-full md:w-1/2 lg:w-1/3">
+                        <product-card :product="p" />
+                    </div>            
+                </div>
+        </section>
+
+<!--
         <section class="bg-white border-b py-8">
-        <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-            Our Products
-            </h2>
-            <div class="w-full mb-4">
-            <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-            </div>
-            <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-                <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                    FeesPro
-                </p>
-                <div class="w-full font-bold text-xl text-gray-800 px-6">
-                    An ERP software for CA's and Tax Consultants
+            <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+                <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+                Our Products
+                </h2>
+                <div class="w-full mb-4">
+                <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                 </div>
-                <p class="text-gray-800 text-base px-6 mb-5">
-                    A complete Billing, Accounting and Work Management Solution for Charterted Accountants and Tax Consultants.
-                </p>
-                </a>
-            </div>
-            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                <div class="flex items-center justify-start">
-                <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                    Know More
-                </button>
-                </div>
-            </div>
-            </div>
-            <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-                <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                    Excel2Tally
-                </p>
-                <div class="w-full font-bold text-xl text-gray-800 px-6">
-                    Excel to Tally Integration.
-                </div>
-                <p class="text-gray-800 text-base px-6 mb-5">
-                    An Excel Automation tool to Export and Import data from Excel to Tally.
-                </p>
-                </a>
-            </div>
-            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                <div class="flex items-center justify-center">
-                <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                    Know more
-                </button>
-                </div>
-            </div>
-            </div>
-            <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-                <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                    TiffApp
-                </p>
-                <div class="w-full font-bold text-xl text-gray-800 px-6">
-                    A cloud based solution for Tiffin Service Business.
-                </div>
-                <p class="text-gray-800 text-base px-6 mb-5">
-                    A simple, cost effective solution to manage Tiffin Service Business.
-                </p>
-                </a>
-            </div>
-            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                <div class="flex items-center justify-end">
-                <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                    Know more
-                </button>
-                </div>
-            </div>
-            </div>
 
-            <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-                <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                    Tally Document Management
-                </p>
-                <div class="w-full font-bold text-xl text-gray-800 px-6">
-                    TDL utility for Tally 
+                <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+                    <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+                    <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                        FeesPro
+                    </p>
+                    <div class="w-full font-bold text-xl text-gray-800 px-6">
+                        An ERP software for CA's and Tax Consultants
+                    </div>
+                    <p class="text-gray-800 text-base px-6 mb-5">
+                        A complete Billing, Accounting and Work Management Solution for Charterted Accountants and Tax Consultants.
+                    </p>
+                    </a>
                 </div>
-                <p class="text-gray-800 text-base px-6 mb-5">
-                    A custom TDL Utility to manage Documents in Tally
-                </p>
-                </a>
-            </div>
-            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                <div class="flex items-center justify-start">
-                <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                    Know More
-                </button>
+                <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+                    <div class="flex items-center justify-start">
+                    <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                        Know More
+                    </button>
+                    </div>
+                </div>
+                </div>
+                <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+                    <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+                    <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                        Excel2Tally
+                    </p>
+                    <div class="w-full font-bold text-xl text-gray-800 px-6">
+                        Excel to Tally Integration.
+                    </div>
+                    <p class="text-gray-800 text-base px-6 mb-5">
+                        An Excel Automation tool to Export and Import data from Excel to Tally.
+                    </p>
+                    </a>
+                </div>
+                <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+                    <div class="flex items-center justify-center">
+                    <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                        Know more
+                    </button>
+                    </div>
+                </div>
+                </div>
+                <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+                    <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+                    <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                        TiffApp
+                    </p>
+                    <div class="w-full font-bold text-xl text-gray-800 px-6">
+                        A cloud based solution for Tiffin Service Business.
+                    </div>
+                    <p class="text-gray-800 text-base px-6 mb-5">
+                        A simple, cost effective solution to manage Tiffin Service Business.
+                    </p>
+                    </a>
+                </div>
+                <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+                    <div class="flex items-center justify-end">
+                    <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                        Know more
+                    </button>
+                    </div>
+                </div>
+                </div>
+
+                <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+                    <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+                    <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                        Tally Document Management
+                    </p>
+                    <div class="w-full font-bold text-xl text-gray-800 px-6">
+                        TDL utility for Tally 
+                    </div>
+                    <p class="text-gray-800 text-base px-6 mb-5">
+                        A custom TDL Utility to manage Documents in Tally
+                    </p>
+                    </a>
+                </div>
+                <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+                    <div class="flex items-center justify-start">
+                    <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                        Know More
+                    </button>
+                    </div>
+                </div>
                 </div>
             </div>
-            </div>
-
-            
-
-        </div>
         </section>
+    -->
+
         <section class="bg-gray-100 py-8">
         <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
             <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
@@ -271,7 +286,7 @@
         <div class="w-full mb-4">
             <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
-        <h3 class="my-4 text-3xl leading-tight">
+        <h3 class="my-4 text-2xl leading-tight">
             Sign up with us for getting discount on our services, to download some free utilities and to get a free version upgrades.
         </h3>
         <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
@@ -293,6 +308,12 @@
                        { ServiceId : 5 , ServiceName : "Python Automation", ServiceDescr : "Make any kind of automation using python." , Logo : "img/pythonlogo.png" , LogoPosition : "Left" }
                      ]
 
+    const ProductList = [ { ProductId : 1 , ProductName : "FeesPro", shortDescr: "An ERP software for CA's and Tax Consultants",  Descr : "A Complete billing, Accounting and Work Management Solution for Chartered Accoutants and Tax Consultants." , Logo : "img/web_applications.png" , page : "feespro" },
+                       { ProductId : 2 , ProductName : "Excel2Tally", shortDescr: 'Excel To Tally Integrtion', Descr : "Excel Automation Tool to Import and Export Data from Excel To Tally." , Logo : "img/mobile_app.jpg" , page : "excel2tally" },
+                       { ProductId : 3 , ProductName : "TiffApp", shortDescr: 'A Cloud based solution for Tiffin Service Business', Descr : "A simple cost effective Solution for Tiffin Service Business." , Logo : "img/Tally_service.png" , page : "Left" },
+                       { ProductId : 4 , ProductName : "Tally Document Management", shortDescr: 'TDL utility for Tally', Descr : "A Custom TDL utility for Tally to Manage documents for vouchers." , Logo : "img/Excel_automation.png" , page : "Right" },
+                       { ProductId : 5 , ProductName : "Tally Approval Workflow", shortDescr: 'Voucher Approval Module for Tally', Descr : "A Custom utility for Tally to for Voucher Approval along with Workflow management." , Logo : "img/pythonlogo.png" , page : "Left" }
+                     ]
 
     
     //function signUp(){

@@ -13,6 +13,29 @@ export NODE_OPTIONS=--openssl-legacy-provider
 
 
 
+Git
+--
+--->  git remote add originavs https://github.com/NitinTandel/avs.git
+
+
+git status
+git add --a
+git commit -m "My comments"
+git push -u originavs master
+
+
+
+
+TODO:
+================
+1) APIs 
+2) Authentication
+3) Feespro Page
+4) Excel2Tally Page
+5) Send emails
+
+9) Deploy on AWS
+
 
 
 
@@ -23,7 +46,8 @@ https://uxwing.com/ringing-phone-outline-icon/
 https://tailwind-elements.com/docs/standard/components/cards/
 
 
-
+--nuxt auth
+https://www.youtube.com/watch?v=A24aKCQ-rf4&t=1870s
 
 
 Splide js Slider
